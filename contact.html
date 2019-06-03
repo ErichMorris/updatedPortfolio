@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Orbitron&display=swap" rel="stylesheet">
+    <!--Styling-->
+    <style>
+            body {
+      font-family: 'Orbitron', sans-serif;
+    }
+    .indexContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 200px;
+      align-items: center;
+      justify-content: center;
+      border: groove grey 2px;
+      background-color: darkslategray;
+    }
+    .indexIconContainer {
+      display: flex;
+      flex-direction: row;
+      height: 50px;
+      width: 15%;
+      justify-content: center;
+    }
+    .indexName {
+      font-family: 'Monoton', cursive;
+      color: white;
+      border-bottom: groove grey 2px;
+    }
+    .icon {
+      height: 50px;
+      width: 50px;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .contactContainer {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      background-color: slategray;
+      border: groove grey 2px;
+    }
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        border: groove grey 2px;
+    }
+    .contactBody {
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+    <title>Contact</title>
+    </head>
+    <body>
+            <nav class = "navbar navbar-expand-sm navbar-dark bg-dark">
+                    <a href = "index.html" class = "navbar-brand">Erich Morris</a>
+                    <div class = "collapse navbar-collapse">
+                        <ul class = "navbar-nav ml-auto">
+                              <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Projects <small>(links to github)</small>
+                                      </a>
+                                      <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="https://github.com/ErichMorris/GoldBadgeChallenges">Gold Badge Project</a>
+                                        <a class="dropdown-item" href="https://github.com/ErichMorris/FerretToyCity">Static Store Front</a>
+                                        <a class="dropdown-item" href="https://github.com/ErichMorris/PuppyBreeding.WebMVC">Blue Badge Project</a>
+                                        <a class="dropdown-item" href="https://github.com/ErichMorris/KangarooAngular">Red Badge Project <small>(front-end)</small></a>
+                                        <a class="dropdown-item" href="https://github.com/ErichMorris/Kangaroo">Red Badge Project <small>(back-end)</small></a>
+                                      </div>
+                                    </li>
+                              <li class = "nav-item">
+                                      <a href = "#" class = "nav-link">Contact</a>
+                                  </li>
+                                  <li class = "nav-item">
+                                      <a href = "Assets/Updated Resume.pdf" class = "nav-link">Resume</a>
+                                  </li>
+                        </ul>
+                    </div> 
+                </nav>
+                <div class = "indexContainer">
+                  <h1 class = "indexName">ERICH MORRIS</h1>
+                  <p>Dot Net Web Developer</p>
+                  <div class = indexIconContainer>
+                      <a href="https://github.com/ErichMorris">
+                        <img class = "icon" src = "Assets/githubIcon.png">
+                      </a>
+                      <a href="https://www.linkedin.com/in/erich-morris-764180185/">
+                        <img class = "icon" src = "Assets/linkdInIcon.png">
+                      </a>
+                  </div>
+                </div>
+                <div class = "contactContainer">
+                  <h1>Contact Me</h1>
+                </div>
+                <div class = "contactBody">
+                        <form class = "contactForm col-4" method="POST" action="https://formspree.io/emorris1692@gmail.com">
+                            <input type="email" name="email" placeholder="Your email address">
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <button type="submit">Send</button>
+                          </form>
+                </div>
+    </body>
